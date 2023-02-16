@@ -1,0 +1,98 @@
+.text-box{
+    display: block;
+    width: 100%;
+    width: 95%;
+    padding: 5px;
+}
+
+.add-form{
+    width: 280px;
+}
+
+.main-window{
+    width: 960px;
+    margin: 0px auto;
+    background: red;
+    padding: 22px;
+    text-align: center;
+    display: table;
+    background-image: linear-gradient(to right, rgb(0 125 127) , rgb(7 30 80));
+    color: white;
+    border: 3px solid black;
+}
+
+
+.add-form {
+    float: left;
+    width: 27%;
+    background: rgb(74 115 121);
+    border-radius: 15px;
+    padding: 26px;
+    border: 3px solid rgb(0 69 118);
+    margin: 0px 5px;
+}
+
+
+.main-content {
+    float: left;
+    width: 58%;
+    border-radius: 15px;
+    padding: 26px;
+    border: 3px solid rgb(0 69 118);
+    background: rgb(74 115 121);
+    margin: 0px 5px;
+}
+
+table {
+    width: 100%;
+}
+
+.form{
+    text-align: left;
+}
+
+
+.add-btn{
+    background: #004576;
+    color: white;
+    padding: 10px 26px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid #004576;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 5px;
+}
+
+a.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-box-edit {
+    width: 90%;
+}
+
+
+.save-btn {
+    background: #004576;
+    color: white;
+    padding: 5px 26px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+hr{
+    margin: 26px 15px 26px 7px;
+}
+
+#msg{
+    color: yellow;
+}

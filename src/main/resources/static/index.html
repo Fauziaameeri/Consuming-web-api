@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Application</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="main-window">
+    <h1>Admin Panel</h1>
+    <h3><div id="msg"></div></h3>
+    <hr>
+    <div class="add-form">
+        <h1> Add Product</h1>
+
+        <div class="form">
+            <lable>Name</lable>
+            <input type="text" class="text-box" placeholder="Product Name" id="nameBox" onkeypress="hideError('nameErr')"/>
+            <div class="error" id="nameErr"></div>
+
+            <br>
+            <lable>Description</lable>
+            <input type="text" class="text-box" placeholder="Product Description" id="descriptionBox"/>
+
+            <br>
+            <lable>Price</lable>
+            <input type="number" class="text-box" placeholder="Product Price" id="priceBox" onkeypress="hideError('priceErr')"/>
+            <div class="error" id="priceErr"></div>
+
+            <br>
+            <button onclick="addNewProduct()" class="add-btn">Add Product</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="flex-container">
+            <h1>All Products</h1>
+            <table id="dateTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Submitted</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
