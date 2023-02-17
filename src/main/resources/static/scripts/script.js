@@ -1,6 +1,7 @@
 
 
 function getTableRow(product) {
+    product.submitted = undefined;
     var id = product.id;
     var name = product.name;
     var description = product.description;
@@ -29,11 +30,11 @@ function getTableRow(product) {
 
     //Cell with Edit
     const editCell = document.createElement("td");
-    editCell.innerHTML = "<a class='link' onclick='editPoduct("+ id +")'> Edit </a>";
+    editCell.innerHTML = "<a class='link' onclick='editProduct("+ id +")'> Edit </a>";
 
     //Cell with Delete
     const deleteCell = document.createElement("td");
-    deleteCell.innerHTML = "<a class='link' onclick='deletePoduct("+ id +")'>Delete</a>";
+    deleteCell.innerHTML = "<a class='link' onclick='deleteProduct("+ id +")'>Delete</a>";
 
 
     const tableRow = document.createElement("tr");
@@ -99,13 +100,11 @@ function addNewProduct(){
         })
         .catch((error) => {
             console.error('Error:', error);
-            document.getElementById("msg").innerText = "Error: Error Occured";
+            document.getElementById("msg").innerText = "Error: Error Occurred";
         });
 
 }
-
-
-function deletePoduct(id) {
+function deleteProduct(id) {
     fetch('http://localhost:8080/products/' + id, {
         method: 'DELETE',
         headers: {
@@ -120,12 +119,12 @@ function deletePoduct(id) {
         })
         .catch((error) => {
             console.error('Error:', error);
-            document.getElementById("msg").innerText = "Error: Error Occured";
+            document.getElementById("msg").innerText = "Error: Error Occurred";
         });
 }
 
 
-function editPoduct(id) {
+function editProduct(id) {
     var tableRow = document.getElementById("product" + id);
     var childrens = tableRow.children;
 
@@ -169,6 +168,6 @@ function saveProduct(id) {
         })
         .catch((error) => {
             console.error('Error:', error);
-            document.getElementById("msg").innerText = "Error: Error Occured";
+            document.getElementById("msg").innerText = "Error: Error Occurred";
         });
 }

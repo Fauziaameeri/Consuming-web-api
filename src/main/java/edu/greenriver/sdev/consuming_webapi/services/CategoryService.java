@@ -23,7 +23,7 @@ public class CategoryService {
         categories.add(category);
         return category;
     }
-     //Write this part in a different way
+
     public Category findCategory(int id) throws GeneralException {
         Category temp = categories.stream()
                .filter(category -> id == category
@@ -59,7 +59,7 @@ public class CategoryService {
          categories.add(saved);
          return saved;
     }
-    public Category findCategory(Integer id) {
+    public Category findCategory() {
         //TODO Auto-generated method stub
         return null;
     }

@@ -1,6 +1,5 @@
 package edu.greenriver.sdev.consuming_webapi.controllers;
 import edu.greenriver.sdev.consuming_webapi.exceptions.GeneralException;
-import edu.greenriver.sdev.consuming_webapi.exceptions.GeneralException;
 import edu.greenriver.sdev.consuming_webapi.models.Category;
 import edu.greenriver.sdev.consuming_webapi.services.CategoryService;
 import org.springframework.web.bind.annotation.*;
@@ -25,8 +24,8 @@ public class CategoriesController {
     }
 
     @GetMapping(value = "/{id}")
-    public Category getCategory(@PathVariable("id") Integer id) throws GeneralException {
-        return categoryService.findCategory(id);
+    public Category getCategory(@PathVariable("id") Integer id) {
+        return categoryService.findCategory();
     }
 
     @PostMapping("/new")

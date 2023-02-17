@@ -80,19 +80,3 @@ a.link {
 }
 
 
-.save-btn {
-    background: #004576;
-    color: white;
-    padding: 5px 26px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-hr{
-    margin: 26px 15px 26px 7px;
-}
-
-#msg{
-    color: yellow;
-}

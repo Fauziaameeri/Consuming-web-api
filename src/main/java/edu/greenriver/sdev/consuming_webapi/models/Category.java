@@ -1,6 +1,5 @@
 package edu.greenriver.sdev.consuming_webapi.models;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
@@ -9,9 +8,6 @@ public class Category {
     private String name;
     private String description;
     private String origin;
-    public Category() {
-        // TODO Auto-generated constructor stub
-    }
 
     public Category(int id, String name, String description, String origin) {
         super();

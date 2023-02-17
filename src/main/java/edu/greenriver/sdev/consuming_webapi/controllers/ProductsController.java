@@ -1,7 +1,6 @@
 package edu.greenriver.sdev.consuming_webapi.controllers;
 
 import edu.greenriver.sdev.consuming_webapi.exceptions.GeneralException;
-import edu.greenriver.sdev.consuming_webapi.exceptions.GeneralException;
 import edu.greenriver.sdev.consuming_webapi.models.Product;
 import edu.greenriver.sdev.consuming_webapi.services.ProductService;
 import org.springframework.web.bind.annotation.*;
